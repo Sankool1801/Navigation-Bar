@@ -1,14 +1,20 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:curved_navigation_bar/src/nav_button.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/rendering.dart';
+import 'package:rentall/main_screen.dart';
 void main(){
   runApp(MaterialApp(
     title: "RentAll",
-    home: MyApp(),
-  ));
+    theme: ThemeData(
+      scaffoldBackgroundColor: Colors.blueAccent,
+      visualDensity: VisualDensity.adaptivePlatformDensity,
+    ),
+    home:MainScreen(),
+  ),
+  );
 }
-
 class MyApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
